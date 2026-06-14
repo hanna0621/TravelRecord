@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.travelrecord.MainActivity">
+    <item
+        android:id="@+id/menuNewest"
+        android:orderInCategory="100"
+        android:title="최신순 정렬"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuOldest"
+        android:orderInCategory="200"
+        android:title="오래된순 정렬"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuDeleteAll"
+        android:orderInCategory="300"
+        android:title="전체 삭제"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="400"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

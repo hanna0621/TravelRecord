@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="앱 정보"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Travel Record"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="여행지, 방문 날짜, 사진, 메모를 저장하고 관리하는 여행 기록 앱입니다."
+        android:textSize="17sp"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주요 기능\n• 여행 기록 추가·조회·수정·삭제\n• 갤러리 사진 선택\n• 최신순·오래된순 정렬\n• 목록 길게 눌러 수정·삭제"
+        android:textSize="16sp"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:id="@+id/buttonSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="여행 목록으로 돌아가기" />
+
+</LinearLayout>
