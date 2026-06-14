@@ -5,17 +5,17 @@
     <item
         android:id="@+id/menuNewest"
         android:orderInCategory="100"
-        android:title="최신순 정렬"
+        android:title="@string/menu_newest"
         app:showAsAction="never" />
     <item
         android:id="@+id/menuOldest"
         android:orderInCategory="200"
-        android:title="오래된순 정렬"
+        android:title="@string/menu_oldest"
         app:showAsAction="never" />
     <item
         android:id="@+id/menuDeleteAll"
         android:orderInCategory="300"
-        android:title="전체 삭제"
+        android:title="@string/menu_delete_all"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_settings"

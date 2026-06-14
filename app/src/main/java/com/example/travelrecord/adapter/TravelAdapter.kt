@@ -20,48 +20,37 @@ class TravelAdapter(
 
         fun bind(travel: Travel) {
             binding.textPlace.text = travel.place
-            binding.textVisitDate.text = travel.visitDate
+            binding.textDate.text = travel.visitDate
 
             if (!travel.photoUri.isNullOrBlank()) {
                 try {
-                    binding.imageThumbnail.setImageURI(
+                    binding.imageTravel.setImageURI(
                         Uri.parse(travel.photoUri)
                     )
                 } catch (e: Exception) {
-                    binding.imageThumbnail.setImageResource(
+                    binding.imageTravel.setImageResource(
                         android.R.drawable.ic_menu_gallery
                     )
                 }
             } else {
-                binding.imageThumbnail.setImageResource(
+                binding.imageTravel.setImageResource(
                     android.R.drawable.ic_menu_gallery
                 )
             }
 
-            // 짧게 누르면 상세 화면
+            // 아이템 클릭 (상세 화면)
             binding.root.setOnClickListener {
                 onItemClick(travel)
             }
 
-            // 길게 누르면 컨텍스트 메뉴 생성
-            binding.root.setOnCreateContextMenuListener { menu, _, _ ->
-                menu.setHeaderTitle(travel.place)
-
-                menu.add("수정").setOnMenuItemClickListener {
-                    onEditClick(travel)
-                    true
-                }
-
-                menu.add("삭제").setOnMenuItemClickListener {
-                    onDeleteClick(travel)
-                    true
-                }
+            // 수정 버튼 클릭
+            binding.buttonEdit.setOnClickListener {
+                onEditClick(travel)
             }
 
-            // 길게 누르면 ContextMenu가 열리도록 설정
-            binding.root.setOnLongClickListener {
-                binding.root.showContextMenu()
-                true
+            // 삭제 버튼 클릭
+            binding.buttonDelete.setOnClickListener {
+                onDeleteClick(travel)
             }
         }
     }

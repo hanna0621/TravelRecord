@@ -20,13 +20,13 @@
                 android:id="@+id/buttonBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="← 뒤로" />
+                android:text="@string/btn_back" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="여행 기록 상세"
+                android:text="@string/title_detail"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -38,14 +38,14 @@
             android:layout_height="240dp"
             android:scaleType="centerCrop"
             android:src="@android:drawable/ic_menu_gallery"
-            android:contentDescription="여행 사진"
+            android:contentDescription="@string/content_desc_photo"
             android:layout_marginBottom="20dp" />
 
         <TextView
             android:id="@+id/textDetailPlace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="여행지명"
+            android:text="@string/hint_place"
             android:textSize="22sp"
             android:textStyle="bold"
             android:layout_marginBottom="12dp" />
@@ -54,7 +54,7 @@
             android:id="@+id/textDetailDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="방문 날짜"
+            android:text="@string/hint_date"
             android:textSize="17sp"
             android:layout_marginBottom="16dp" />
 
@@ -62,7 +62,7 @@
             android:id="@+id/textDetailMemo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="여행 메모"
+            android:text="@string/hint_memo"
             android:textSize="17sp"
             android:minHeight="120dp"
             android:padding="12dp"
@@ -73,14 +73,14 @@
             android:id="@+id/buttonEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="수정"
+            android:text="@string/btn_edit"
             android:layout_marginBottom="12dp" />
 
         <Button
             android:id="@+id/buttonDelete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="삭제" />
+            android:text="@string/btn_delete" />
 
     </LinearLayout>
 
