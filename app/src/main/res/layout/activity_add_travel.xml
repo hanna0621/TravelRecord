@@ -20,13 +20,13 @@
                 android:id="@+id/buttonBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="← 뒤로" />
+                android:text="@string/btn_back" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="여행 기록 추가"
+                android:text="@string/title_add"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -36,33 +36,36 @@
             android:id="@+id/editPlace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="여행지명"
+            android:hint="@string/hint_place"
             android:inputType="text"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editVisitDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="방문 날짜 예: 2026-06-14"
+            android:hint="@string/hint_date"
             android:inputType="date"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/editMemo"
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:hint="여행 메모"
+            android:hint="@string/hint_memo"
             android:gravity="top"
             android:inputType="textMultiLine"
             android:padding="12dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:importantForAutofill="no" />
 
         <ImageView
             android:id="@+id/imagePhoto"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:contentDescription="선택한 여행 사진"
+            android:contentDescription="@string/content_desc_photo"
             android:scaleType="centerCrop"
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_marginBottom="12dp" />
@@ -71,14 +74,14 @@
             android:id="@+id/buttonSelectPhoto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="갤러리에서 사진 선택"
+            android:text="@string/btn_select_photo"
             android:layout_marginBottom="12dp" />
 
         <Button
             android:id="@+id/buttonSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="저장" />
+            android:text="@string/btn_save" />
 
     </LinearLayout>
 
